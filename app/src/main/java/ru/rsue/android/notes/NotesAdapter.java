@@ -23,7 +23,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.Holder> {
     }
 
 
-    public void setNotes(LinkedList<Note> notes) {
+    public void setNotes(List<Note> notes) {
         this.notes = notes;
     }
 
