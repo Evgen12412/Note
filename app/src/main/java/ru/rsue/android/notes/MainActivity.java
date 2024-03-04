@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.setNotes(data.getNotes());
+    }
+
     private  void initView( ) {
         fBtn = findViewById(R.id.fbtn_add_note);
         rvContainer = findViewById(R.id.rv_container);

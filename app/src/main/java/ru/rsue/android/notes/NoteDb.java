@@ -18,6 +18,15 @@ public class NoteDb {
         return instance;
     }
 
+    public NoteDb() {
+
+        for(int i =0; i < 20; i++){
+            Random random = new Random();
+            Note note = new Note(i, "Note " + i, random.nextInt(3));
+            notes.add(note);
+        }
+    }
+
 
 
     public List<Note> getNotes() {
